@@ -49,7 +49,7 @@ fractal.set('project.title', 'EXA FRACTAL BASE');
 fractal.components.engine(nunjucks);
 fractal.components.set('default.preview', '@preview');
 fractal.components.set('default.status', null);
-//fractal.components.set('ext', '.hbs');
+fractal.components.set('ext', '.hbs'); //Check for Handlebars / *.hbs Files in component dir
 fractal.components.set('ext', '.html');
 fractal.components.set('path', `${paths.src}/components`);
 

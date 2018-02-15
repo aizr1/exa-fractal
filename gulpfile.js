@@ -162,6 +162,8 @@ function scripts(callback) {
 }
 
 // Styles
+
+/* TODO: Possible to add .less and .scss support here?*/
 function styles() {
     return gulp.src(`${paths.src}/assets/styles/*.css`)
         .pipe(sourcemaps.init())
