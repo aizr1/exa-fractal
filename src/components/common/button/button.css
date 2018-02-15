@@ -1,0 +1,32 @@
+.c-button {
+  @apply --typeset-ui;
+
+  display: inline-block;
+  padding: map(spaces, medium) map(spaces, large);
+  background-color: $color-ui-link;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  &:hover {
+    background-color: $color-ui-link--hover;
+    color: white;
+  }
+
+  &:active {
+    background-color: $color-ui-link--active;
+    color: white;
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.c-button--more {
+  display: block;
+}

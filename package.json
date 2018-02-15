@@ -1,0 +1,95 @@
+{
+  "name": "exa-fractal",
+  "version": "0.1",
+  "description": "exa-fractal",
+  "keywords": [
+    "styleguide",
+    "patterns",
+    "library"
+  ],
+  "homepage": "",
+  "bugs": "https://github.com/aizr1/exa-fractal/issues",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "seife",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aizr1/exa-fractal.git"
+  },
+  "main": "fractal.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node_modules/.bin/gulp start",
+    "build": "node_modules/.bin/gulp build",
+    "dev": "node_modules/.bin/gulp dev",
+    "publish": "node_modules/.bin/gulp publish",
+    "test": "xo || stylelint src/**/*.css"
+  },
+  "browserslist": [
+    ">2%"
+  ],
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "font-range"
+          ]
+        }
+      ]
+    }
+  },
+  "xo": {
+    "space": true,
+    "envs": "browser"
+  },
+  "dependencies": {
+    "@frctl/fractal": "^1.1.0",
+    "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/nunjucks": "^1.0.0",
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.0",
+    "bulma": "^0.6.2",
+    "cssnano": "^4.0.0-rc.2",
+    "del": "^3.0.0",
+    "fontfaceobserver": "^2.0.0",
+    "gulp": "^4.0.0",
+    "gulp-gh-pages": "^0.5.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-util": "^3.0.0",
+    "markdown-it": "^8.0.0",
+    "markdown-it-abbr": "^1.0.0",
+    "markdown-it-footnote": "^3.0.0",
+    "marked": "^0.3.12",
+    "nunjucks-date": "^1.2.0",
+    "postcss-apply": "^0.8.0",
+    "postcss-assets": "^5.0.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-color-function": "^4.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-map": "^0.9.0",
+    "postcss-media-minmax": "^3.0.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-responsive-type": "^1.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "prismjs": "^1.9.0",
+    "rollup": "^0.54.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-closure-compiler-js": "^1.0.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "wicg-inert": "^1.1.0"
+  },
+  "devDependencies": {
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "xo": "^0.18.0"
+  }
+}
